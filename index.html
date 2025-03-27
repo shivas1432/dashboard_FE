@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User & Guest Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="dashboard" style="display: none;">
+        <h1>User & Guest Dashboard</h1>
+        <div class="stats">
+            <div class="card" id="resumeusersCount">Resume Users: 0</div>
+            <div class="card" id="guestCount">Guests: 0</div>
+        </div>
+
+        <h2>Resume User List</h2>
+        <div class="table-container">
+            <table id="resumeusersTable">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </table>
+        </div>
+
+        <h2>Guest List</h2>
+        <div class="table-container">
+            <table id="guestTable">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Access Time</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Authentication Section -->
+    <div id="authentication" class="auth-container" style="display: block;">
+        <h2>Please Enter the Authentication Code</h2>
+        <input type="password" id="authCode" placeholder="Enter Code">
+        <button onclick="authenticate()">Submit</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
