@@ -84,10 +84,4 @@ Update API endpoints in `script.js` to connect with your analytics backend:
 const API_BASE_URL = 'your-backend-api-url';
 ```
 
-## Contributing
-
-This is a personal analytics tool. Feel free to fork and adapt for your own portfolio tracking needs.
-
----
-
 **Note**: Designed specifically for tracking personal portfolio metrics and user engagement.
